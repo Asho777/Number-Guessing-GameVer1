@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Number Guessing Game</h1>
+    
+    <div id="intro" class="game-section active">
+      <p>Think of a number between 1 and 100.</p>
+      <p>I'll guide you through some steps and guess your final result!</p>
+      <button id="start-btn">I've got my number</button>
+    </div>
+
+    <div id="step1" class="game-section">
+      <h2>Step 1</h2>
+      <p>Double your number.</p>
+      <button class="next-btn">Done</button>
+    </div>
+
+    <div id="step2" class="game-section">
+      <h2>Step 2</h2>
+      <p>Add <span id="random-number">6</span> to the result.</p>
+      <button class="next-btn">Done</button>
+    </div>
+
+    <div id="step3" class="game-section">
+      <h2>Step 3</h2>
+      <p>Divide the result by 2.</p>
+      <button class="next-btn">Done</button>
+    </div>
+
+    <div id="step4" class="game-section">
+      <h2>Step 4</h2>
+      <p>Subtract your original number from the result.</p>
+      <button class="next-btn">Done</button>
+    </div>
+
+    <div id="result" class="game-section">
+      <h2>Your final number is...</h2>
+      <div class="result-number" id="final-result">3</div>
+      <p>Was I right?</p>
+      <div class="button-group">
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
+      </div>
+    </div>
+
+    <div id="correct-answer" class="game-section">
+      <h2>I'm So Clever!</h2>
+      <p>Would you Like To Play Again?</p>
+      <button id="play-again-yes">Yes</button>
+    </div>
+
+    <div id="wrong-answer" class="game-section">
+      <h2>So Maths was Not Your First Choice at School......</h2>
+      <p>Hehehe!</p>
+      <button id="play-again-no">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
